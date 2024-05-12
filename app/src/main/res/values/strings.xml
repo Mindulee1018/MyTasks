@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Do It</string>
+    <string name="save">Save</string>
+    <string name="new_task">New Task</string>
+    <string name="tasks">My Tasks</string>
+    <string name="new_task_name">Task Name</string>
+    <string name="task_description">Task Description</string>
+    <string name="task_deadline">Deadline</string>
+    <string name="description">Description.</string>
+    <string name="completed_tasks">Completed</string>
+    <string name="uncompleted_tasks">Uncompleted</string>
+    <string name="all_tasks">All</string>
+    <string-array name="priority_levels">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
+</resources>

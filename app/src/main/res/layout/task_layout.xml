@@ -1,0 +1,78 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:padding="8dp">
+
+        <CheckBox
+            android:id="@+id/todoCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:buttonTint="@android:color/holo_green_dark"
+            android:paddingStart="8dp"
+            android:textSize="16sp"
+            tools:text="Task Title" />
+
+        <LinearLayout
+            android:id="@+id/taskDeadlineLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/taskPriority"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-76dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="vertical"
+            android:paddingEnd="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Due Date:"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/taskDeadline"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                tools:text="2024-05-25" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/taskDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/todoCheckBox"
+            android:paddingStart="32dp"
+            android:textSize="14sp"
+            tools:text="Description" />
+
+        <TextView
+            android:id="@+id/taskPriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/taskDescription"
+            android:paddingStart="32dp"
+            android:paddingTop="5dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="13sp"
+            tools:text="High Priority" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

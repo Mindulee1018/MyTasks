@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@color/cardview_light_background">
+
+    <EditText
+        android:id="@+id/newTaskText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/new_task_name"
+        android:minHeight="48dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <EditText
+        android:id="@+id/newTaskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newTaskText"
+        android:hint="@string/task_description"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+    <Spinner
+        android:id="@+id/newTaskPriority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newTaskDescription"
+        android:entries="@array/priority_levels"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/newTaskDeadline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newTaskPriority"
+        android:clickable="true"
+        android:drawableEnd="@drawable/baseline_calendar_today_24"
+        android:focusableInTouchMode="false"
+        android:hint="@string/task_deadline"
+        android:minHeight="48dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <Button
+        android:id="@+id/newTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newTaskDeadline"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:cornerRadius="@dimen/btn_radius"/>
+</RelativeLayout>
